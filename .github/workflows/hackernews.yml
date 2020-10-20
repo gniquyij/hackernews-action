@@ -20,6 +20,7 @@ jobs:
           username: ${{secrets.EMAIL_USERNAME}}
           password: ${{secrets.EMAIL_PASSWORD}}
           subject: hackernews
+          body: A bright new day!
           to: yuqing.ji@outlook.com
           from: yuqing.ji@outlook.com
           attachments: pdf/hackernews.pdf
