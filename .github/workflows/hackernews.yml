@@ -19,4 +19,4 @@ jobs:
           body: A bright new day!
           to: yuqing.ji@outlook.com
           from: yuqing.ji@outlook.com
-          attachments: pdf
+          attachments: pdf/hackernews.pdf
