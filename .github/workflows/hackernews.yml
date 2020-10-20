@@ -8,10 +8,6 @@ jobs:
       - name: generate pdf
         run: |
           docker-compose up
-      - uses: actions/upload-artifact@v1
-        with:
-          name: hackernews.pdf
-          path: pdf/hackernews.pdf
       - name: email
         uses: dawidd6/action-send-mail@v2
         with:
@@ -23,4 +19,4 @@ jobs:
           body: A bright new day!
           to: yuqing.ji@outlook.com
           from: yuqing.ji@outlook.com
-          attachments: pdf/hackernews.pdf
+          attachments: pdf/*.pdf
