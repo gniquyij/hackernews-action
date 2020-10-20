@@ -1,0 +1,10 @@
+version: '3'
+services:
+  hacknews:
+    container_name: hackernews
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "./pdf:/pdf"
+    command: 'node hackernews.js'
