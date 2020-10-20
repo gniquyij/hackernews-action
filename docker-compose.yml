@@ -6,5 +6,6 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
+      - "./subscriptions:/subscriptions"
       - "./pdf:/pdf"
-    command: 'node hackernews.js'
+    command: 'node /subscriptions/hackernews.js'
