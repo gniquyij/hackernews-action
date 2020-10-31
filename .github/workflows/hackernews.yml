@@ -1,6 +1,8 @@
 name: hackernews
 on:
   push:
+  repository_dispatch:
+    types: manual
   schedule:
     - cron: '0 19 * * *'
 
